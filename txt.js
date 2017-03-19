@@ -2,10 +2,14 @@ $(document).ready(function() {
 $('#content').load("home.htm");
 //handle click
 
-$('ul#nav li a').click(function(){
-var page = $(this).attr('href');
-  $('#content').load(''+ page +'.htm');
-
+$('#home').click(function(){
+$('#content').load("home.htm");
+});
+  $('#about').click(function(){
+$('#content').load("about.htm");
+});
+  $('#contact').click(function(){
+$('#content').load("contact.htm");
 });
 });
 
